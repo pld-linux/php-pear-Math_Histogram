@@ -25,7 +25,7 @@ statistics. Supports simple and cummulative histograms. You can
 generate regular (2D) histograms, 3D, or 4D histograms. Data must not
 have nulls.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Klasy do obliczania rozk³adu histogramów oraz statystyk asocjacyjnych.
