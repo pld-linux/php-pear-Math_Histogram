@@ -1,6 +1,8 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Math
 %define		_subclass	Histogram
+%define		_status		beta
+
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_class}_%{_subclass} - Classes to calculate histogram distributions
 Summary(pl):	%{_class}_%{_subclass} - klasa licz±ca rozk³ad histogramu
@@ -22,10 +24,14 @@ statistics. Supports simple and cummulative histograms. You can
 generate regular (2D) histograms, 3D, or 4D histograms. Data must not
 have nulls.
 
+This class has in PEAR status: %{_status}
+
 %description -l pl
 Klasy do obliczania rozk³adu histogramów oraz statystyk asocjacyjnych.
 Wspiera proste oraz kumulacyjne histogramy. Mo¿na generowaæ regularne
 histogramy (2D), 3D oraz 4D. Dane nie mog± zawieraæ zer.
+
+Ta klasa ma w PEAR status: %{_status}
 
 %prep
 %setup -q -c
