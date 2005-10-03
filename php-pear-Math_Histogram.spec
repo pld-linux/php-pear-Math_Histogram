@@ -8,7 +8,7 @@ Summary:	%{_class}_%{_subclass} - Classes to calculate histogram distributions
 Summary(pl):	%{_class}_%{_subclass} - klasa licz±ca rozk³ad histogramu
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
-Release:	3.1
+Release:	3.2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 # Source0-md5:	7735ea1665adbbf4b759e5e212a0b447
@@ -16,7 +16,9 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Math_Histogram/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
+Requires:	php-pear-Math_Stats
 BuildArch:	noarch
+Requires:	php-common >= 3:4.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
