@@ -2,13 +2,13 @@
 %define		_class		Math
 %define		_subclass	Histogram
 %define		_status		beta
-
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_class}_%{_subclass} - Classes to calculate histogram distributions
 Summary(pl):	%{_class}_%{_subclass} - klasa licz±ca rozk³ad histogramu
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
-Release:	3.2
+Release:	4
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 # Source0-md5:	7735ea1665adbbf4b759e5e212a0b447
