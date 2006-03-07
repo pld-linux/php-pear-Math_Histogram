@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 # Source0-md5:	7735ea1665adbbf4b759e5e212a0b447
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Math_Histogram/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-Math_Stats
