@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_class}_%{_subclass} - Classes to calculate histogram distributions
-Summary(pl):	%{_class}_%{_subclass} - klasa licz±ca rozk³ad histogramu
+Summary(pl.UTF-8):   %{_class}_%{_subclass} - klasa liczÄ…ca rozkÅ‚ad histogramu
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
 Release:	4
@@ -31,10 +31,10 @@ have nulls.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasy do obliczania rozk³adu histogramów oraz statystyk asocjacyjnych.
-Wspiera proste oraz kumulacyjne histogramy. Mo¿na generowaæ regularne
-histogramy (2D), 3D oraz 4D. Dane nie mog± zawieraæ zer.
+%description -l pl.UTF-8
+Klasy do obliczania rozkÅ‚adu histogramÃ³w oraz statystyk asocjacyjnych.
+Wspiera proste oraz kumulacyjne histogramy. MoÅ¼na generowaÄ‡ regularne
+histogramy (2D), 3D oraz 4D. Dane nie mogÄ… zawieraÄ‡ zer.
 
 Ta klasa ma w PEAR status: %{_status}.
 
