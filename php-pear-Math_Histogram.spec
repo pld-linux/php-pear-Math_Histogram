@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_class}_%{_subclass} - Classes to calculate histogram distributions
-Summary(pl.UTF-8):   %{_class}_%{_subclass} - klasa licząca rozkład histogramu
+Summary(pl.UTF-8):	%{_class}_%{_subclass} - klasa licząca rozkład histogramu
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
 Release:	4
