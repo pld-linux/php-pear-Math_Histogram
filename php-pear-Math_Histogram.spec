@@ -1,13 +1,11 @@
-%include	/usr/lib/rpm/macros.php
-%define		_class		Math
-%define		_subclass	Histogram
 %define		_status		beta
-%define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_class}_%{_subclass} - Classes to calculate histogram distributions
-Summary(pl.UTF-8):	%{_class}_%{_subclass} - klasa licząca rozkład histogramu
+%define		_pearname	Math_Histogram
+%include	/usr/lib/rpm/macros.php
+Summary:	%{_pearname} - Classes to calculate histogram distributions
+Summary(pl.UTF-8):	%{_pearname} - klasa licząca rozkład histogramu
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
-Release:	6
+Release:	7
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,7 +14,7 @@ URL:		http://pear.php.net/package/Math_Histogram/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.1
+Requires:	php(core) >= 4.1
 Requires:	php-pear
 Requires:	php-pear-Math_Stats
 BuildArch:	noarch
@@ -40,7 +38,7 @@ Ta klasa ma w PEAR status: %{_status}.
 %prep
 %pear_package_setup
 install -d docs/%{_pearname}/data
-mv ./%{php_pear_dir}/%{_class}/examples docs/%{_pearname}
+mv ./%{php_pear_dir}/Math/examples docs/%{_pearname}
 mv ./%{php_pear_dir}/data/%{_pearname}/examples docs/%{_pearname}/examples/data
 
 %install
@@ -56,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %doc docs/%{_pearname}/*
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/Math/*.php
