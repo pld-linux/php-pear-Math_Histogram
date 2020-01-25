@@ -1,6 +1,5 @@
 %define		_status		beta
 %define		_pearname	Math_Histogram
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Classes to calculate histogram distributions
 Summary(pl.UTF-8):	%{_pearname} - klasa licząca rozkład histogramu
 Name:		php-pear-%{_pearname}
